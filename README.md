@@ -17,12 +17,13 @@ The best tool for simulating an App on the Mi Band 7 seems to be [Zepp Player](h
 ## Build .bin archive
 ```bash
 # rebuild assets
-rm -rf assets/
-mkdir assets/
-cd assets/
-npx wfjs convertPngToTga -i ../assets_png/icon.png -e tga
-cd ..
-zip -r my_custom_app.bin ./ -i "page/*" "assets/*" "app.json" "app.js"
+rm -rf build/assets/
+mkdir build/assets/
+cd build/assets/
+npx wfjs convertPngToTga -i ../../assets_png/icon.png -e tga
+cd ../..
+# Zip build dir into .bin
+(cd build; zip -r ../my_custom_app.bin ./)
 ```
 
 ## Install

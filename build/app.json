@@ -1,0 +1,47 @@
+{
+  "app": {
+    "appId": 3888909,
+    "appIdType": 0,
+    "appName": "Matt Test App",
+    "appType": "app",
+    "description": "Test App for the Mi Band 7",
+    "icon": "icon.tga",
+    "vender": "Matt!",
+    "version": {
+      "code": 1,
+      "name": "1.0.0"
+    }
+  },
+  "configVersion": "v2",
+  "debug": false,
+  "i18n": {
+    "ru-RU": {
+      "appName": "Matt Test App",
+      "appDescription": "Test App for the Mi Band 7"
+    }
+  },
+  "module": {
+    "page": {
+      "pages": [
+        "page/My App Screen"
+      ],
+      "window": {
+        "backgroundColor": "#eeeeee",
+        "backgroundTextStyle": "light",
+        "navigationBarBackgroundColor": "#ffffff",
+        "navigationBarTextStyle": "black",
+        "navigationBarTitleText": ""
+      }
+    }
+  },
+  "permissions": [
+    "fs"
+  ],
+  "runtime": {
+    "apiVersion": {
+      "compatible": "1.0.0",
+      "minVersion": "1.0.0",
+      "target": "1.0.1"
+    }
+  }
+}
